@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="tp4-ing-A24">
+  <ClassDiagramComponents>
+    <Class name="Actividad_4" package="actividad_4" visibility="public" xPosition="277.0" yPosition="175.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Auto" package="actividad_4" visibility="public" xPosition="868.0" yPosition="602.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="patente" type="String" visibility="private"/>
+        <Field name="combustible" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="patente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getPatente" returnType="String" visibility="public"/>
+        <Method name="setPatente" returnType="void" visibility="public">
+          <Argument type="String" name="patente"/>
+        </Method>
+        <Method name="getCombustible" returnType="double" visibility="public"/>
+        <Method name="setCombustible" returnType="void" visibility="public">
+          <Argument type="double" name="combustible"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Casa" package="actividad_4" visibility="public" xPosition="605.0" yPosition="105.0">
+      <Fields>
+        <Field name="zona" type="String" visibility="private"/>
+        <Field name="piso" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="zona"/>
+          <Argument type="int" name="piso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getZona" returnType="String" visibility="public"/>
+        <Method name="setZona" returnType="void" visibility="public">
+          <Argument type="String" name="zona"/>
+        </Method>
+        <Method name="getPiso" returnType="int" visibility="public"/>
+        <Method name="setPiso" returnType="void" visibility="public">
+          <Argument type="int" name="piso"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Celular" package="actividad_4" visibility="public" xPosition="1724.0" yPosition="122.0">
+      <Fields>
+        <Field name="compania" type="String" visibility="private"/>
+        <Field name="num" type="String" visibility="private"/>
+        <Field name="saldo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="compania"/>
+          <Argument type="String" name="num"/>
+          <Argument type="double" name="saldo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCompania" returnType="String" visibility="public"/>
+        <Method name="setCompania" returnType="void" visibility="public">
+          <Argument type="String" name="compania"/>
+        </Method>
+        <Method name="getNum" returnType="String" visibility="public"/>
+        <Method name="setNum" returnType="void" visibility="public">
+          <Argument type="String" name="num"/>
+        </Method>
+        <Method name="getSaldo" returnType="double" visibility="public"/>
+        <Method name="setSaldo" returnType="void" visibility="public">
+          <Argument type="double" name="saldo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Hijo" package="actividad_4" visibility="public" xPosition="1251.0" yPosition="37.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="billetera" type="double" visibility="private"/>
+        <Field name="celular" type="Celular" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="double" name="billetera"/>
+          <Argument type="Celular" name="celular"/>
+          <Argument type="Auto" name="auto"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="cantar" returnType="void" visibility="public"/>
+        <Method name="conducirAuto" returnType="void" visibility="public">
+          <Argument type="Auto" name="auto"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getBilletera" returnType="double" visibility="public"/>
+        <Method name="setBilletera" returnType="void" visibility="public">
+          <Argument type="double" name="billetera"/>
+        </Method>
+        <Method name="getCelular" returnType="Celular" visibility="public"/>
+        <Method name="setCelular" returnType="void" visibility="public">
+          <Argument type="Celular" name="celular"/>
+        </Method>
+        <Method name="bailar" returnType="void" visibility="public"/>
+        <Method name="jugarLoteria" returnType="int" visibility="public"/>
+        <Method name="heredarDinero" returnType="void" visibility="public">
+          <Argument type="double" name="dinero"/>
+        </Method>
+        <Method name="jugarFutbol" returnType="void" visibility="public"/>
+        <Method name="hacerGoles" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Padre" package="actividad_4" visibility="public" xPosition="897.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="casa" type="Casa" visibility="private"/>
+        <Field name="auto" type="Auto" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Auto" name="auto"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="comprarAuto" returnType="void" visibility="private">
+          <Argument type="Auto" name="auto"/>
+        </Method>
+        <Method name="construirCasa" returnType="void" visibility="private"/>
+        <Method name="cantar" returnType="void" visibility="public"/>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getCasa" returnType="Casa" visibility="public"/>
+        <Method name="setCasa" returnType="void" visibility="public">
+          <Argument type="Casa" name="casa"/>
+        </Method>
+        <Method name="getAuto" returnType="Auto" visibility="public"/>
+        <Method name="setAuto" returnType="void" visibility="public">
+          <Argument type="Auto" name="auto"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Hermano" package="actividad_4" visibility="public" xPosition="1469.0" yPosition="765.0">
+      <Methods>
+        <Method name="jugarFutbol" returnType="void" visibility="package"/>
+        <Method name="hacerGoles" returnType="int" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="Madre" package="actividad_4" visibility="public" xPosition="1654.0" yPosition="765.0">
+      <Methods>
+        <Method name="bailar" returnType="void" visibility="package"/>
+        <Method name="jugarLoteria" returnType="int" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="Tio" package="actividad_4" visibility="public" xPosition="1227.0" yPosition="765.0">
+      <Methods>
+        <Method name="heredarDinero" returnType="void" visibility="package">
+          <Argument type="double" name="dinero"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="actividad_4.Hijo" target="actividad_4.Celular" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="actividad_4.Hijo" target="actividad_4.Hermano"/>
+    <UseRelation source="actividad_4.Padre" target="actividad_4.Auto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="casa" source="actividad_4.Padre" target="actividad_4.Casa" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="actividad_4.Hijo" target="actividad_4.Tio"/>
+    <HasRelation name="celular" source="actividad_4.Hijo" target="actividad_4.Celular" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="actividad_4.Padre" target="actividad_4.Casa" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="actividad_4.Hijo" target="actividad_4.Auto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="actividad_4.Hijo" target="actividad_4.Padre"/>
+    <HasRelation name="auto" source="actividad_4.Padre" target="actividad_4.Auto" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="actividad_4.Hijo" target="actividad_4.Madre"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
